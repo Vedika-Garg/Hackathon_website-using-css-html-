@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    flex: 1;
+}
+
+.logo{
+    color: #ecebe6;
+    font-size: 35px;
+    font-family: Arial;
+    float: left;
+    padding-top: auto;
+}
+
+
+.menu{
+    width: 1000px;
+    float: right;
+    height: 80px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 70px;
+    font-size: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    white-space: nowrap;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+.content{
+    text-align: center;
+    max-width: 800px;
+    padding-top: 100px;
+    margin: 100px auto;
+    color: #fff;
+    position: relative;
+    font-family: Arial;
+}
+
+.content .par{
+    padding: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    color: #171717;
+    font-weight: bold;
+}
+
+.content .tagline {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #eaace7;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #7c3d7c;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #65aef3;
+
+}
+
+.event-wrapper{
+    background-color: rgb(111, 164, 245);
+    width: 100%;
+}
+
+.event{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-color: rgb(111, 164, 245);
+    padding-bottom: 100px;
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+p{
+    color: #faf5f5;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-col{
+    flex-basis: 31%;
+    background: #e5f5f6;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.event-col:hover{
+    box-shadow:  0 0 20px 0px rgba(0,0,0,1);
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+.reg{
+    background-color: rgb(246, 221, 247);
+    padding: 40px;
+    max-width: 700px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+section.reg .name div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+section.reg label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+section.reg input {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+section.reg input:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.2);
+}
+
+section.reg .btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+section.reg .btn:hover {
+    background-color: #0056b3;
+}
+
+#successMsg {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: green;
+}
+
+.reg-wrapper{
+    background-color: rgb(111, 164, 245);
+    width: 100%;
+}
+
+.coninfo{
+    margin: 100px;
+    width: 80%;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.coninfo h2{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+.coninfo p{
+    text-align: left;
+    font-size: 18px;
+}

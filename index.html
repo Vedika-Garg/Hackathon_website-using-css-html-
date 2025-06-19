@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hackathon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="first" id="home">
+    <div class="main">
+        <div class="navbar">
+                <div class="icon">
+                    <h2 class="logo">Hackathon&nbsp;1.0</h2>
+                </div>
+
+                <div class ="menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#ed">Event&nbsp;details</a></li>
+                        <li><a href="#rf">Registration&nbsp;form</a></li>
+                        <li><a href="#ci">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="content">
+                    <h1>TechRush</h1>
+                    <h3 class="tagline">Collide&nbsp;Code&nbsp;Conquer!!!</h3>
+                    <p class="par">TechRush is more than just a hackathon — it&rsquo;s an adrenaline-packed experience made for curious minds and creative problem-solvers. Whether you&rsquo;re a coder, designer, or just someone who loves building cool things, TechRush gives you the space to team up, experiment, and turn your ideas into real, working solutions. From AI and Web Dev to FinTech, Cybersecurity, and Sustainability, you&rsquo;ll dive into challenges that matter. And it&rsquo;s not just about the code — you&rsquo;ll get to connect with mentors, take part in fun mini-games, and meet like-minded folks from other colleges. At TechRush, we are not just hacking — we are creating, learning, and having a blast while doing it.<br>Date: 25/06/2025<br>Time: 10:00 a.m to 5:00 p.m<br>Venue: XYZ,City</p>
+                        <button class="cn"><a href="#">Register Now!!</a></button>
+                </div>
+        </div>
+    </div>
+    </section>
+    <div class="event-wrapper">
+    <section class="event" id="ed">
+        <h1>Details</h1>
+        <h3><br><br> About the Event</h3>
+        <p><br>TechRush is a 24-hour inter-college hackathon where innovation meets execution. Participants will collaborate in teams to solve real-world challenges in fields like Artificial Intelligence, Web Development, Cybersecurity, FinTech, and Sustainability. With mentorship support, networking opportunities, and a collaborative environment, TechRush encourages you to think big, code smart, and build solutions that matter.</p>
+        
+        <div class="row">
+            <div class="event-col">
+                <h3>🕒 Schedule</h3>
+                <p>10:00 AM :: Inauguration Ceremony & Team Registration<br>11:00 AM :: Problem Statement Reveal<br>11:30 AM :: Hacking Begins<br>01:00 PM :: Lunch Break<br>02:00 PM :: Mentorship Rounds with Industry Experts<br>05:00 PM :: Mini-Games & Networking Session<br>07:00 PM :: Dinner Break<br>10:00 PM :: Midnight Progress Checkpoint<br>08:00 AM (Next Day) :: Final Submission Deadline<br>09:00 AM :: Team Presentations & Demo<br>12:00 PM :: Prize Distribution & Closing Ceremony</p>
+            </div>
+            <div class="event-col">
+                <h3> Rules & Guidelines</h3>
+                <p>~ Teams must consist of 2 to 4 members.<br>~ All code must be written during the hackathon period.<br>~ Internet use is allowed, but plagiarism is strictly prohibited.<br>~ Mentors are available for guidance but won&rsquo;t solve the problem for you.<br>~ Each team must submit their project before the deadline.<br>~ Judging will be based on innovation, functionality, UI/UX, and presentation.</p>
+            </div>
+            <div class="event-col">
+                <h3> Prizes & Benefits</h3>
+                <p>🏆 Winner Prize :: ₹25,000 + Internship Opportunity<br>🥈 Runner-Up :: ₹15,000 + Swag Kits<br>💡 Best Innovation :: ₹10,000 + Certificate of Achievement<br>🎁 Swag for All Participants (T-shirts, stickers, goodies)<br>🎓 Certificates, mentorship, and real networking with industry experts</p>
+            </div>
+        </div>   
+    </section>
+
+
+    <section class="reg" id="rf">
+        <h1>Register Yourself</h1>
+        <br>
+        <form id="registrationForm">
+            <div class="name" >
+            <div>
+                <label for="n">Name:</label>
+                <input type="text" placeholder="Enter your name" name="name" id="n" required>
+            </div>
+            <br>
+            <div>
+                <label for="m">Email:</label>
+                <input type="email" placeholder="Enter your mail-id" name="email" id="m" required>
+            </div>
+            <br>
+            <div>
+                <label for="p">Phone number:</label>
+                <input type="tel" placeholder="Enter your phone number" id="p" name ="phone" required>
+            </div>
+            <br>
+            <div>
+                <label for="c">College:</label>
+                <input type="text" placeholder="Enter your college name" id="c" name="college" required>
+            </div>
+            <br>
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+        <p id="successMsg" style="display: none; color: green; font-weight: bold; margin-top: 15px;">✅ Registration Successful!</p>
+    </section>
+
+
+    <section class="coninfo" id="ci">
+    <h2>Hurry Up!! Don&rsquo;t Miss The Opportunity...</h2>
+    <a href="" class="hero-btn">Contact Us</a>
+    <p>Email: xyz@gmail.com<br>Phone: +91 12345 67892<br>Location: Xyz, City</p>
+    <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+    </section>
+    </div>
+
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector(".reg .name");
+        const name = document.getElementById("n");
+        const email = document.getElementById("m");
+        const phone = document.getElementById("p");
+        const college = document.getElementById("c");
+
+        // Create success message element
+        const successMsg = document.createElement("p");
+        successMsg.id = "successMsg";
+        form.appendChild(successMsg);
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent form refresh
+
+            if (!name.value || !email.value || !phone.value || !college.value) {
+                successMsg.style.color = "red";
+                successMsg.textContent = "Please fill in all fields.";
+                return;
+            }
+
+            successMsg.style.color = "green";
+            successMsg.textContent = "Registration successful!";
+            form.reset(); // Optional: clear the form
+        });
+    });
+    </script>
+</body>
+</html>
+
+
